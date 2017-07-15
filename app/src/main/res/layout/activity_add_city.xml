@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.puduapps.weather.activities.MainActivity">
+    tools:context="com.puduapps.weather.activities.AddCityActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/main_activity_toolbar"
+        android:id="@+id/add_city_activity_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimaryDark"
