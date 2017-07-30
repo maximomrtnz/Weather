@@ -48,7 +48,7 @@ public class YahooWeatherAPIManager {
 
     public static YahooResponse getPlacesByCityName(String cityName){
 
-        String locationQuery = MessageFormat.format("select * from geo.places where text = \"{0}\"",cityName);
+        String locationQuery = MessageFormat.format("select * from geo.places where text = \"{0}\" limit 25",cityName);
 
         URL url = buildUrlWithLocationQuery(locationQuery);
 
@@ -883,8 +883,8 @@ public class YahooWeatherAPIManager {
     }
 
     public class LatLong{
-        private long latitude;
-        private long longitude;
+        private float latitude;
+        private float longitude;
     }
 
     public class Region{
